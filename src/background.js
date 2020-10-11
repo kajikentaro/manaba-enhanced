@@ -19,3 +19,9 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
     openCodeInRespon(info.selectionText)
   }
 })
+
+chrome.runtime.onMessage.addListener((message) => {
+  if (message.action === "openOptionsPage") {
+    chrome.runtime.openOptionsPage()
+  }
+})
