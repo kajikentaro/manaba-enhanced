@@ -10,7 +10,7 @@ const config = merge(common, {
   entry: {
     "manaba-document_start": PATHS.src + "/manaba-document_start.js",
     "manaba-document_end": PATHS.src + "/manaba-document_end.js",
-    createContextMenu: PATHS.src + "/createContextMenu.js",
+    background: PATHS.src + "/background.js",
   },
 })
 

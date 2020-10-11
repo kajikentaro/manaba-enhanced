@@ -15,7 +15,7 @@
   ],
   "background": {
     "scripts": [
-      "createContextMenu.js"
+      "background.js"
     ],
     "persistent": false
   },
