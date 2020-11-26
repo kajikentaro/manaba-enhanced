@@ -22,7 +22,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://manaba.tsukuba.ac.jp/*"
+        "https://room.chuo-u.ac.jp/*"
       ],
       "run_at": "document_start",
       "js": [
@@ -31,7 +31,7 @@
     },
     {
       "matches": [
-        "https://manaba.tsukuba.ac.jp/*"
+        "https://room.chuo-u.ac.jp/*"
       ],
       "run_at": "document_end",
       "js": [
