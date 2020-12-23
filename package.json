@@ -15,7 +15,7 @@
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.5.3",
     "dayjs": "^1.9.7",
-    "eslint": "^7.16.0",
+    "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.3.0",
     "file-loader": "^6.0.0",
@@ -35,7 +35,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {

@@ -14,7 +14,7 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (
     info.menuItemId === "respon" &&
-    tab.url.includes("room.chuo-u.ac.jp")//CHANGE
+    tab.url.includes("room.chuo-u.ac.jp") //CHANGE
   ) {
     openCodeInRespon(info.selectionText)
   }
