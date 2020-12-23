@@ -1,35 +1,13 @@
-# manaba Enhanced for Tsukuba
+# manaba Enhanced for Chuo
 
 Make your manaba a little bit more comfortable.
 
-Get it via [Chrome Web Store](https://chrome.google.com/webstore/detail/manaba-enhanced-for-tsuku/fldngcbchlbfgbccilklplmhljilhfch).
+このソフトウェアは「manaba Enhanced for Tsukuba」を中央大学向けにリビルドしたものです。
+mkobayashime氏に感謝いたします。
 
-**For students of University of Tsukuba.**
+フォーク元: https://github.com/mkobayashime/manaba-enhanced
 
 ![Screenshot](./bin/dist/thumbnail1.png)
-
-## Supported Univ. / 対応大学
-- University of Tsukuba / 筑波大学
-
-If you want to use it in your univ., please follow the [instruction](https://github.com/mkobayashime/manaba-enhanced#how-to-add-support-for-your-univ) below. 
-
-## Features
-
-1. Assignments will be colored according to the time to the deadline.
-
-    Red: 1 day remaining  
-    Yellow: 3 days remaining  
-    Green: 7 days remaining
-
-1. The report entered in the report input screen will be auto-saved, and not disappear even if the page is closed.
-
-1. Highlight the publication deadline of course newses and course contents.
-
-1. Enable filtering of courses in mypage by terms/modules.
-
-1. Remove the confirmation dialogue when you click links.
-
-1. Add a context menu to open the attend code in Respon.
 
 ## 機能
 
@@ -40,45 +18,24 @@ If you want to use it in your univ., please follow the [instruction](https://git
     緑: 期限まであと7日
 
 1. レポート入力画面で入力しているレポートを自動保存し、ページを閉じても消えないようにします
+    * !私の環境で入力が必要なレポートが存在しなかったので未動作確認です。多分動きません（）!
 
 1. コースニュースやコンテンツの公開期限を強調表示します
 
 1. マイページのコースをモジュールでフィルターする機能を追加します
+    * 中央大学にはこのようなタームは存在しませんが丸々残してあります。
 
 1. 外部リンクをクリックした際の確認ダイアログを取り除きます
 
 1. 出席コードをResponで開く右クリックメニューを追加します
 
-## Disclaimer / 免責事項
+## 免責事項
 
-This is an unofficial software and has nothing to do with the administration of the University of Tsukuba.
+これは大学非公式のソフトウェアであり、中央大学とは無関係です
 
-We will not be held responsible for any damages and troubles caused by this software.
-
-これは大学非公式のソフトウェアであり、筑波大学とは無関係です
-
-私達はこのソフトウェアを利用したことによるいかなる損害、トラブルに対する責任を負いません
+作者はこのソフトウェアを利用したことによるいかなる損害、トラブルに対する責任を負いません
 
 ## Development
-
-This extension is built on top of awesome [chrome-extension-cli](https://github.com/dutiyesh/chrome-extension-cli).
-
-```
-yarn // Install dependencies
-
-yarn watch // Run in dev mode
-
-yarn build // When the app is ready to publish in store
-```
-
-## How to add support for your univ.
-
-If your univ. is using manaba and there is *Assignments* tab in the mypage, please follow the instruction below to use this extension.
-
-1. Fork this repository.
-1. Replace `matches` of `content_scripts` in `manifest.json` with the url of manaba of your univ..
-1. Build and install in Chrome.  
-Please see [chrome-extension-cli](https://github.com/dutiyesh/chrome-extension-cli) for more detailed information.
 
 あなたの大学がmanabaを導入しており、マイページに「未提出課題」タブが存在する場合、以下の手順で対応が可能です。
 

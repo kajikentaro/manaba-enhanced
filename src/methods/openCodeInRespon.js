@@ -16,9 +16,7 @@ const validateCode = (code) => {
 const openCodeInRespon = (code) => {
   const trimmedCode = trimCode(code)
   if (validateCode(trimmedCode)) {
-    window.open(
-      `https://atmnb.tsukuba.ac.jp/attend/tsukuba?code=${trimmedCode}`
-    )
+    window.open(`https://yes.chuo-u.ac.jp/attend/chuo?code=${trimmedCode}`)
   }
 }
 

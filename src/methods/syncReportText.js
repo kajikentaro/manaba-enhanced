@@ -7,7 +7,7 @@ const syncReportText = () => {
 
   const getId = () => {
     const url = window.location.href
-    return url.substr(url.indexOf("manaba.tsukuba.ac.jp/ct/") + 24)
+    return url.substr(url.indexOf("room.chuo-u.ac.jp/ct/") + 22) //CHANGE
   }
 
   chrome.storage.local.get("reportText", (result) => {
