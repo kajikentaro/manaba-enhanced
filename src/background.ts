@@ -44,7 +44,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
     info.menuItemId === "respon" &&
     tab &&
     tab.url &&
-    tab.url.includes("manaba.tsukuba.ac.jp")
+    tab.url.includes("room.chuo-u.ac.jp")
   ) {
     if (tab.id) {
       chrome.tabs.sendMessage(tab.id, { kind: "open-in-respon" })
